@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+body{
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 300px;
+    background-color: #59b6b6;
+    font-size: 18px;
+    font-weight: 380;
+    align-items: center;
+} 
+.container{
+    text-align: center;
+}
+.box{
+    max-width: 450px;
+    width: 100%;
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.predicted-disease h3{
+    font-size: 27px;
+    color: #e43535;
+}
+.description h4, p{
+    font-size: 19px;
+    color: #0c0c0c;
+    text-align: left;
+    padding-left: 10px;
+}
+.description p{
+    margin-top: 5px;
+}
+.precautions{
+    font-size: 19px;
+    color: #0c0c0c;
+    text-align: left;
+}
+.precautions h4{
+    margin-top: 0;
+    padding-left: 10px;
+}
+.precautions ul{
+    padding-left: 28px;
+    padding-top: 5px;
+    margin: 0;
+}
+.precautions li{
+    margin-bottom: 5px;
+}

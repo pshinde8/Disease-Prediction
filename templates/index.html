@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="title"> Add Symptoms</div>    
+        <form action="/submit", method="post">
+            <div class="details">
+                <!--label for="disease">Symptoms</label -->
+                <select name="symptoms" class="custom-select" id="symptoms" multiple required>
+                    <option value="itching">itching</option>
+                    <option value="skin_rash">skin_rash</option>
+                    <option value="nodal_skin_eruptions">nodal_skin_eruptions</option>
+                    <option value="dischromic_patches">dischromic_patches</option>
+                    <option value="pus_filled_pimples">pus_filled_pimples</option>
+                    <option value="blackheads">blackheads</option>
+                    <option value="scurring">scurring</option>
+                    <option value="continuous_sneezing">continuous_sneezing</option>
+                    <option value="shivering">shivering</option>
+                    <option value="ulcers_on_tongue">ulcers_on_tongue</option>
+                    <option value="vomiting">vomiting</option>
+                    <option value="fatigue">fatigue</option>
+                    <option value="weight_gain">weight_gain</option>
+                    <option value="stomach_pain">stomach_pain</option>
+                    <option value="anxiety">anxiety</option>
+                    <option value="chills">chills</option>
+                    <option value="cold_hands_and_feets">cold_hands_and_feets</option>
+                    <option value="cough">cough</option>
+                    <option value="high_fever">high_fever</option>
+                    <option value="weight_loss">weight_loss</option>
+                    <option value="sunken_eyes">sunken_eyes</option>
+                    <option value="breathlessness">breathlessness</option>
+                    <option value="mood_swings">mood_swings</option>
+                    <option value="headache">headache</option>
+                    <option value="acidity">acidity</option>
+                    <option value="indigestion">indigestion</option>
+                    <option value="dehydration">dehydration</option>
+                    <option value="sweating">sweating</option>
+                    <option value="joint_pain">joint_pain</option>
+                    <option value="yellowish_skin">yellowish_skin</option>
+                    <option value="burning_micturition">burning_micturition</option>
+                    <option value="muscle_wasting">muscle_wasting</option>
+                    <option value="dark_urine">dark_urine</option>
+                    <option value="restlessness">restlessness</option>
+                    <option value="spotting_urination">spotting_urination</option>
+                    <option value="lethargy">lethargy</option>
+                    <option value="patches_in_throat">patches_in_throat</option>
+                    <option value="irregular_sugar_level">irregular_sugar_level</option>
+                    <!-- <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option> -->
+
+                </select>
+
+                <button class="button">Predict</button>
+
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+    <script>
+        new MultiSelectTag('symptoms') 
+    </script>
+
+</body>
+</html>
